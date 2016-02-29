@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * This page was created with the template Grayscale, by startbootstrap (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 
@@ -68,11 +68,15 @@ a:focus {
     font-weight: 400;
 }
 
+.orange {
+  color: #885159;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Slabo266666px', serif;
     background-color: #000;
 }
 
@@ -129,6 +133,14 @@ a:focus {
     color: #fff;
 }
 
+.navbar-custom .navbar-brand>img {
+  position:sticky;
+  max-width: 60px;
+  width: auto;
+  padding-bottom: 50px;
+
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -151,7 +163,7 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 70px 0;
     text-align: right;
     color: #fff;
     background: url(../img/fade_background2.jpg) no-repeat bottom center scroll;
@@ -167,12 +179,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-
-.logo {
-  shape-inside: auto;
-  background: url(../img/Logo.jpg);
-}
-
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -180,6 +186,8 @@ a:focus {
 
 .intro .intro-body .brand-heading {
   font-size: 40px;
+  line-height: 120%;
+  font-size-adjust: auto;
 }
 
 .intro .intro-body .intro-text {
@@ -188,9 +196,8 @@ a:focus {
 
 .highlight-text {
   padding: 1.1;
-  background-color:  rgba(0, 0, 0, .6);
+  background-color: rgba(0 , 0, 0, .6);
 }
-
 
 .wrapper {
   .make-row();
@@ -203,15 +210,16 @@ a:focus {
   .make-lg-column-offset(1);
 }
 
-
-
 @media(min-width:768px) {
     .intro {
         height: 100%;
         padding: 0;
     }
 
+    .intro .intro-body
+
     .intro .intro-body .brand-heading {
+      margin-bottom: 100px;
         font-size: 58px;
     }
 
@@ -296,18 +304,45 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.download-section {
+.about-me-head {
+  text-align: center;
+  border-bottom: solid;
+  padding-bottom: -15px;
+}
+
+.portrait {
+  padding-top: 35px;
+  padding-right: 35px;
+}
+
+.about-me {
+  padding-top:35px;
+  padding-left:35px;
+}
+
+.skills-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    background-color: green;
     background: url() no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.service-block-all {
+
+}
+
+.service-block{
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 15px;
 }
 
 #map {
@@ -318,7 +353,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
