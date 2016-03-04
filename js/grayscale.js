@@ -16,6 +16,16 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
+
+$(document).ready(function() {
+
+	setTimeout(function(){
+		$('body').addClass('loaded');
+		$('h1').css('color','#222222');
+	}, 3000);
+
+});
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
